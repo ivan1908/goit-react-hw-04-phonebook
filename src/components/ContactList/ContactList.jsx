@@ -9,9 +9,7 @@ const visibleContact = contacts.filter(contact =>
     return (
     <>
         {contacts.length === 0 ? (
-            Report.info('Phonebook Info', 'Contact book is empty!',
-              'Okay',
-            )) : (
+                <h3>Contact book is empty!</h3>) : (
                 <ul className={style.list}>
                         {visibleContact.map(({id, name, number}) => (
                         <li className={style.item} key={id}>
