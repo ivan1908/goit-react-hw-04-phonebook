@@ -1,6 +1,5 @@
 import PropTypes from "prop-types";
 import style from './ContactList.module.css';
-import { Report } from 'notiflix/build/notiflix-report-aio';
 
 export const ContactList = ({ contacts, deleteContact, filter}) => {
 const visibleContact = contacts.filter(contact =>
